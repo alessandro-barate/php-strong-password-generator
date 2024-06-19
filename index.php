@@ -2,7 +2,7 @@
 include 'functions.php';
 $_SESSION['my_password'] = $generated_password;
 
-var_dump($_SESSION);
+// var_dump($_SESSION);
 ?>
 
 <!DOCTYPE html>
@@ -35,9 +35,6 @@ var_dump($_SESSION);
                         <button class="py-2 px-4">Genera password</button>
                     </div>
                 </form>
-                <div>
-                    <p class="py-4 text-center">La password generata è: <?php echo $generated_password ?> </p>
-                </div>
             </div>
         </section>
     </main>

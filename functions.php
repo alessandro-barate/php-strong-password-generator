@@ -14,6 +14,7 @@ function generatePassword($length)
     $my_password = '';
     for ($i = 0; $i < $length; $i++) {
         $my_password .= $characters[rand(0, strlen($characters) - 1)];
+        header('Location: ./generated-password.php');
     }
     return $my_password;
 };
