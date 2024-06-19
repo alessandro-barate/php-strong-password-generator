@@ -22,7 +22,7 @@ include 'functions.php';
 
     <main>
         <section>
-            <div class="pt-5 ms-5">
+            <div class="pt-5 ms-5 text-center">
                 <form action="index.php" method="GET">
                     <div class="pb-3">
                         <label for="length">Digita la quantità di caratteri voluti nella password</label>
