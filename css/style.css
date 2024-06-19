@@ -1,0 +1,22 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: bisque;
+}
+
+main {
+    background-color: azure;
+}
+
+.button-container {
+    width: 30%;
+}
+
+button {
+    border: 1px solid rgb(99, 98, 98);
+    border-radius: 20px;
+}
