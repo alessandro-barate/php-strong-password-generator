@@ -11,9 +11,8 @@ function generatePassword($length)
     $characters = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!?~@#-_+<>[]{}';
     $my_password = '';
     for ($i = 0; $i < $length; $i++) {
-        $my_password = $characters[rand(0, strlen($characters) - 1)];
+        $my_password .= $characters[rand(0, strlen($characters) - 1)];
     }
-    echo ($my_password);
     return $my_password;
 };
 
@@ -47,6 +46,9 @@ function generatePassword($length)
                         <button>Genera password</button>
                     </div>
                 </form>
+                <div>
+                    <p>La password generata è: <?php echo $generated_password ?> </p>
+                </div>
             </div>
         </section>
     </main>
