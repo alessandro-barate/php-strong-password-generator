@@ -1,6 +1,14 @@
 <?php
 
-$generated_password = $_GET['generated-password'];
+// $generated_password = $_GET['generated-password'];
+if (isset($_GET['length'])) {
+    $length = $_GET['length'];
+    $generated_password = generatePassword($length);
+};
+
+function generatePassword($length)
+{
+}
 
 ?>
 
@@ -25,8 +33,8 @@ $generated_password = $_GET['generated-password'];
             <div>
                 <form action="index.php" method="GET">
                     <div>
-                        <label for="generated-password">Digita la quantità di caratteri voluti nella password</label>
-                        <input type="number" id="generated-password" name="generated-password">
+                        <label for="length">Digita la quantità di caratteri voluti nella password</label>
+                        <input type="number" id="length" name="length">
                     </div>
                     <div>
                         <button>Genera password</button>
