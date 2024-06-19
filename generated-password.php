@@ -1,6 +1,7 @@
 <?php
 include 'session.php';
 include 'functions.php';
+$_SESSION['my_password'] = $generated_password;
 ?>
 
 <!DOCTYPE html>
