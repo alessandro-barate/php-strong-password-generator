@@ -1,5 +1,7 @@
 <?php
 
+$generated_password = '';
+
 if (isset($_GET['length'])) {
     $length = $_GET['length'];
     $generated_password = generatePassword($length);
