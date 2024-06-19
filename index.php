@@ -2,6 +2,8 @@
 include 'functions.php';
 session_start();
 $_SESSION['my_password'] = $generated_password;
+
+var_dump($_SESSION);
 ?>
 
 <!DOCTYPE html>

@@ -1,11 +1,10 @@
 <?php
 
-session_start();
-
 if (isset($_GET['length'])) {
     $length = $_GET['length'];
     $generated_password = generatePassword($length);
-};
+} else {
+}
 
 function generatePassword($length)
 {
