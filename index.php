@@ -2,7 +2,10 @@
 require_once __DIR__ . '/functions.php';
 $_SESSION['my_password'] = $generated_password;
 
-// header('Location: generated-password.php');
+if (!empty($generated_password)) {
+    header('Location: generated-password.php');
+};
+
 ?>
 
 <!DOCTYPE html>

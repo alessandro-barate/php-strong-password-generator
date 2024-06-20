@@ -16,7 +16,7 @@ $_SESSION['my_password'] = $generated_password;
 <body>
     <main>
         <div>
-            <p class="py-4 text-center">La password generata è: <?php echo $_SESSION['my_password']; ?> </p>
+            <p class="py-4 text-center">La password generata è: <?php echo $generated_password; ?> </p>
         </div>
     </main>
 </body>
