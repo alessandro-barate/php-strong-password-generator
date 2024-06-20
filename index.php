@@ -29,7 +29,7 @@ if (!empty($generated_password)) {
     <main>
         <section>
             <div class="pt-5 ms-5 text-center">
-                <form action="index.php" method="GET">
+                <form action="generated-password.php" method="GET">
                     <div class="pb-3">
                         <label for="length">Digita la quantità di caratteri voluti nella password</label>
                         <input type="number" id="length" name="length">
