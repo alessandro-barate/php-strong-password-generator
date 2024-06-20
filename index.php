@@ -1,8 +1,8 @@
 <?php
-include 'functions.php';
+require_once __DIR__ . '/functions.php';
 $_SESSION['my_password'] = $generated_password;
 
-// var_dump($_SESSION);
+// header('Location: generated-password.php');
 ?>
 
 <!DOCTYPE html>

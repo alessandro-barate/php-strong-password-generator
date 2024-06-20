@@ -3,10 +3,9 @@
 $generated_password = '';
 $_SESSION['my_password'] = $generated_password;
 
-if (isset($_GET['length'])) {
+if (!empty($_GET['length'])) {
     $length = $_GET['length'];
     $generated_password = generatePassword($length);
-    header('Location: generated-password.php');
 };
 
 function generatePassword($length)
@@ -18,7 +17,3 @@ function generatePassword($length)
     }
     return $my_password;
 };
-
-// if (isset($generated_password)) {
-//     header('Location: generated-password.php');
-// };
